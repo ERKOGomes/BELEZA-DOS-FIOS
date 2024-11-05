@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../belezadosfios/css/header.css" />
+    <link rel="stylesheet" href="../belezadosfios/css/footer.css" />
+    <link rel="stylesheet" href="../belezadosfios/css/carrossel.css">
+    <script src="../belezadosfios/js/carrossel.js"></script>
+    <link rel="shortcut icon" href="../belezadosfios/img/logo.png">
+    <title>BELEZA DOS FIOS</title>
+</head>
+
+<body>
+    <!--          HEADER          -->
+    <header class="header">
+        <div class="nav_container">
+            <a href="../belezadosfios/index.html">
+                <img src="../belezadosfios/img/logo.png" alt="Logo belezadosfios">
+            </a>
+            <nav class="nav">
+                <ul class="nav_1">
+                    <li class="nav_link"><a href="#">Promoções</a></li>
+                    <li class="nav_link"><a href="#">Lançamentos</a></li>
+                    <li class="nav_link"><a href="#">Lisos</a></li>
+                    <li class="nav_link"><a href="#">Cacheados</a></li>
+                </ul>
+                <ul class="nav_2">
+                    <img src="../belezadosfios/img/icons/sacola.png" alt="Ícone Sacola">
+                    <li class="nav_link"><a href="../belezadosfios/html/carrinho.html">Minha Sacola</a></li>
+
+                    <img src="../belezadosfios/img/icons/vertical divider.png" alt="Divisor Vertical">
+                    <img src="../belezadosfios/img/icons/user.png" alt="Ícone Usuário">
+                    <li class="nav_link"><a href="../belezadosfios/html/login.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--          FIM DO HEADER          -->
+    <br><br>
+
+    <!--          SLIDE          -->
+    <div class="slide_container">
+        <a href="#" class="Slides fade">
+            <img src="../belezadosfios/img/carrosel1.png" style="width:100%">
+        </a>
+
+        <a href="#" class="Slides fade">
+            <img src="../belezadosfios/img/carrosel2.png" style="width:100%">
+        </a>
+
+        <a href="#" class="Slides fade">
+            <img src="../belezadosfios/img/carrosel3.png" style="width:100%">
+        </a>
+
+        <a class="anterior" onclick="maisSlides(-1)">❮</a>
+        <a class="proximo" onclick="maisSlides(1)">❯</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="ponto" onclick="slideAtual(1)"></span>
+        <span class="ponto" onclick="slideAtual(2)"></span>
+        <span class="ponto" onclick="slideAtual(3)"></span>
+    </div>
+    <!--          FIM DO SLIDE          -->
+
+    <!--          FOOTER          -->
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <img src="../belezadosfios/img/logo_footer.png" alt="Logo Footer">
+                <p>Fale com a gente de segunda a sexta-feira das 9h às 18h</p>
+                <p>belezadosfios@gmail.com</p>
+                <p>(11) 98765-4321</p>
+            </div>
+            <div class="footer_content">
+                <h3>DESENVOLVEDORES</h3>
+                <ul class="list">
+                    <li><a href="../belezadosfios/html/amanda.html">Amanda Luiza Dias Santos</a></li>
+                    <li><a href="../belezadosfios/html/erick.html">Erick Oliveira Gomes</a></li>
+                    <li><a href="../belezadosfios/html/isadora.html">Isadora Cassioti Teodoro</a></li>
+                    <li><a href="../belezadosfios/html/patrick.html">Patrick Gomes de Sousa</a></li>
+                </ul>
+            </div>
+            <div class="footer_content">
+                <h3>PÁGINAS</h3>
+                <ul class="list">
+                    <li><a href="../belezadosfios/index.html">HOME</a></li>
+                    <li><a href="#">PROMOÇÕES</a></li>
+                    <li><a href="#">LANÇAMENTOS</a></li>
+                    <li><a href="#">LISOS</a></li>
+                    <li><a href="#">CACHEADOS</a></li>
+                    <li><a href="#">SACOLA</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom_bar">
+            <img src="../belezadosfios/img/logo_alcina.png" alt="Logo Alcina" width="70px" height="70px">
+            <img src="../belezadosfios/img/logo_exposoft.png" alt="Logo Exposoft" width="70px" height="70px">
+        </div>
+    </footer>
+    <!--          FIM DO FOOTER          -->
+</body>
+
+</html>

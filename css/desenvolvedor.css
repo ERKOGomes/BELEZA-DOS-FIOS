@@ -1,0 +1,59 @@
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.sobre .img_sobre img {
+    border-radius: 60px;
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 100%;
+}
+
+.sobre .txt_sobre {
+    flex: 1 1 30%;
+    color: #000;
+}
+
+.sobre .txt_sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt_sobre h2 span {
+    color: hsl(308, 81%, 75%);
+    display: block;
+}
+
+.sobre .txt_sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn_social {
+    display: flex;
+    gap: 10px;
+}
+
+.btn_social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #e0a3dd;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn_social button:hover {
+    background-color: #d88bcc;
+}

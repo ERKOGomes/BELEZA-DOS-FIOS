@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/carrinho.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>Carrinho de Compras</title>
+</head>
+
+<body>
+  <div class="ellipse-container">
+    <div class="ellipse"></div>
+    <div class="titulo-carrinho"><strong>SEUS CARRINHO</strong></div>
+    <div class="voltar">
+      <a href="../index.html">
+        <img src="../img/icons/VOLTAR.png" width="40px" height="40px">
+    </div>
+    </a>
+  </div>
+
+
+  <main>
+    <div class="conteudo-carrinho">
+      <section>
+        <table class="tabela-carrinho">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Total</th>
+              <th>Remover</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="produto-carrinho">
+                  <img src="../img/kit_Gelatinas.png" alt="Imagem do Produto" width="90px" height="90px" />
+                  <div class="info-produto">
+                    <div class="nome-produto">Nome do produto</div>
+                    <div class="categoria-produto">Categoria</div>
+                  </div>
+                </div>
+              </td>
+              <td>R$ 120</td>
+              <td>
+                <div class="quantidade">
+                  <button class="btn-diminuir"><i class="bx bx-minus"></i></button>
+                  <span class="numero-quantidade">2</span>
+                  <button class="btn-aumentar"><i class="bx bx-plus"></i></button>
+                </div>
+              </td>
+              <td>R$ 240</td>
+              <td>
+                <button class="btn-remover"><i class="bx bx-x"></i></button>
+              </td>
+            </tr>
+            <!-- Repetição dos produtos -->
+          </tbody>
+        </table>
+      </section>
+      <aside>
+        <div class="caixa-resumo">
+          <header>Resumo da compra</header>
+          <div class="informacoes-resumo">
+            <div><span>Sub-total</span><span>R$ 418</span></div>
+            <div><span>Frete</span><span>Gratuito</span></div>
+            <div>
+            </div>
+          </div>
+          <footer>
+            <span>Total</span>
+            <span>R$ 418</span>
+          </footer>
+        </div>
+        <button class="btn-finalizar">Finalizar Compra</button>
+      </aside>
+    </div>
+  </main>
+</body>
+
+</html>

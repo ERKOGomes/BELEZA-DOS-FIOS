@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* container do slide */
+.slide_container {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+.Slides {
+  display: none;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+.Slides img {
+  width: 100%;
+  display: block;
+}
+
+/* Botões próximo & anterior */
+.anterior,
+.proximo {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease, color 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posiciona o botão próximo à direita */
+.proximo {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Posiciona o botão anterior à esquerda */
+.anterior {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Altera o fundo dos botões ao passar o mouse sobre eles */
+.anterior:hover,
+.proximo:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Os pontos/indicadores */
+.ponto {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #797777;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.ativo,
+.ponto:hover {
+  background-color: #000;
+}
+
+/* Animação de fade */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Em telas menores, diminui o tamanho do texto */
+@media only screen and (max-width: 300px) {
+
+  .anterior,
+  .proximo {
+    font-size: 11px;
+  }
+}
